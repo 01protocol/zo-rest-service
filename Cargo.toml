@@ -1,0 +1,25 @@
+[package]
+name = "zo-rest-service"
+version = "0.1.0-beta.1"
+edition = "2021"
+license = "Apache-2.0"
+
+[features]
+devnet = ["zo-abi/devnet"]
+default = []
+
+[dependencies]
+actix-web = "4.0.0-rc.2"
+anchor-client = "0.22.0"
+anchor-spl = "0.22.0"
+bytemuck = "1"
+clap = { version = "3", default-features = false, features = ["std", "derive", "env"] }
+dotenv = "0.15"
+env_logger = "0.9"
+fixed = "1"
+num-traits = "0.2"
+serde = "1"
+solana-client = "1.9"
+thiserror = "1"
+tokio = "1"
+zo-abi = { git = "https://github.com/01protocol/zo-abi.git", rev = "6f9383a63f7f9bc3e0210fd2cc347d744915a241" }
